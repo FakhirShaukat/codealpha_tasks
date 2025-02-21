@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#home, #about, #service {
+    scroll-margin-top: 100px; 
+}
+
+body{
+    font-family: "Poppins";
+    background-color: black;
+    color: white;
+}
+
+/*First section of the portfolio*/
+
+.container{
+    width: 100%;
+    height: 90vh;
+}
+.header {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;  
+    background-color: #121212;
+    color: white;
+    border-bottom: 1px solid white;
+    z-index: 1000; 
+}
+
+.header h1 {
+    font-size: 50px;
+    margin-left: 100px;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.nav-bar {
+    padding-right: 50px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 40px;
+    color: white;
+}
+
+/*Main section of the portfolio*/
+
+
+.main-content{
+    margin-top: 200px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.headings{
+    width: 800px;
+    margin-left: 300px;
+}
+
+
+.headings h1{
+    font-size: 40px;
+    font-family: "Poppins";
+    font-weight: lighter;
+}
+
+.headings h2{
+    font-size: 60px;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: white;
+}
+
+.headings h3{
+    font-size: 30px;
+    font-family: "Nunito";
+    font-weight: lighter;
+}
+
+.headings button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    margin-top: 20px;
+    font-family: "Nunito";
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+.headings button:hover{
+    transition: 0.5s;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+.image img{
+    margin-right: 200px;
+    width: 550px;
+    background-color: #121212;
+}
+
+
+/*About Us Section*/
+
+.main-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.image-2 img{
+    width: 500px;
+    margin-left: 200px;
+}
+
+.headings-about{
+    margin-right: 200px ;
+}
+
+.headings-about h1{
+    font-size: 40px;
+
+}
+
+.headings-about p{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: light;
+    font-family: "Nunito";
+    width: 600px;
+    line-height:30px;
+}
+
+.headings-about ul{
+    margin-top: 10px;
+    list-style-type: circle;
+    font-family: "Nunito";
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.headings-about li span{
+    font-weight: bold;
+    color: red;
+}
+
+.headings-about button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    font-family: "Nunito";
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+.headings-about button:hover{
+    transition: 0.3s;
+    background-color: orange;
+    color:white;
+    font-weight: bolder;
+}
+
+/*Service section*/
+
+.heading-service{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.heading-service h1{
+    font-size: 40px;
+}
+
+.heading-service p{
+    font-family: "Nunito";
+    font-size: 18px;
+}
+
+.BOX{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap:0;
+    padding: 0;
+    justify-content: center;
+
+}
+
+.boxes{
+    border: 1px solid;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.boxes:hover{
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+}
+
+.boxes img{
+    padding-top: 20px;
+    width: 100px;
+}
+
+.boxes p{
+    padding-top: 5px;
+    width: 340px;
+    line-height: 24px;
+}
+
+/*footer section*/
+
+.footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-logo{
+    margin-left: 400px;
+    font-size: 15px;
+
+}
+
+.footer-logo p{
+    width: 400px;
+    font-size: 15px;
+    font-family: "Nunito";
+}
+
+.footer-boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-right: 400px;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+.footer-boxes ul{
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: "Nunito";
+
+}
+
+.footer-boxes ul li{
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.footer-para{
+    margin-top: 200px;
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+/*For small screens*/
+
+@media (max-width: 768px){
+    .header{
+        width: 100%;
+        position: fixed;
+    }
+
+    .header h1{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+
+    .nav-bar ul{
+        display: list-item;
+        width: 200px;
+    }
+    .nav-bar ul li a{
+        font-size: 12px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headings{
+        width: 400px;
+        margin-left: 20px;
+    }
+
+    .headings h1{
+        font-size: 30px;
+    }
+
+    .headings h2{
+        font-size: 30px;
+    }
+    .headings h3{
+        font-size: 20px;
+    }
+
+    .image {
+        order: 2;
+
+    }
+
+    .headings {
+        order: 3; 
+    }
+
+    .image img {
+        margin-top: -70px;
+        margin-left: 50px;
+        width: 70%; 
+        border-radius: 50%; 
+    }
+
+    .headings button{
+        width: 100px;
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .image-2{
+        display: none;
+    }
+
+    .headings-about h1{
+        margin-top: -60px;
+        font-size: 20px;
+        margin-left: 140px;
+    }
+
+    .headings-about p{
+        margin-left: 44px;
+        width: 300px;
+        font-size: 12px;
+        line-height: 20px;
+        font-family: "Poppins";
+    }
+
+    .headings-about ul{
+        margin-left: 70px;
+        font-size: 10px;
+    }
+
+    .headings-about button{
+        width: 100px;
+        font-size: 12px;
+        height: 30px;
+        margin-left: 40px;
+    }
+
+    .heading-service{
+        margin-top: 100px;
+    }
+
+    .heading-service h1 {
+        font-size: 20px;
+    }
+
+    .heading-service p{
+        font-size: 12px;
+        font-family: "Poppins";
+        margin-top: 5px;
+    }
+
+    .BOX{
+        display: list-item;
+        margin-left: 20px;
+    }
+
+    .boxes{
+        width: 270px;
+        height: 300px;
+    }
+
+    .boxes p{
+        width: 200px;
+        font-size: 12px;
+        margin-left: 30px;
+    }
+
+    .boxes img{
+        width: 80px;
+    }
+
+    .footer{
+        display: list-item;
+    }
+
+    .footer-logo{
+        margin-left: 0px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .footer-boxes{
+        margin: 40px;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
